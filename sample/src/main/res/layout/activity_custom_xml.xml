@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jiechen.tabview.TabView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/tab_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:tab_back_ground_color="#f0f0f0"
+    app:tab_gravity="left"
+    app:tab_height="80dp"
+    app:tab_img_height="40dp"
+    app:tab_img_to_text_gap="5dp"
+    app:tab_img_width="40dp"
+    app:tab_position="2"
+    app:tab_text_select_color="#106eb0"
+    app:tab_text_size="16sp"
+    app:tab_text_un_select_color="#d4d4d4" />
+
