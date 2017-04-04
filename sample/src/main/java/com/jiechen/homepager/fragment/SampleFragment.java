@@ -1,24 +1,32 @@
-package com.jiechen.homepager;
+package com.jiechen.homepager.fragment;
 
-import android.graphics.Color;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
+import android.support.annotation.Nullable;
+import android.support.v4.app.Fragment;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
 
-import com.jiechen.homepager.fragment.FragmentCommon;
+import com.jiechen.homepager.R;
 import com.jiechen.tabview.TabView;
 import com.jiechen.tabview.TabViewChild;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class CustomJavaActivity extends AppCompatActivity {
+/**
+ * SampleFragment
+ * Created by JieChen on 2017/4/4.
+ */
 
+public class SampleFragment extends Fragment {
+
+    @Nullable
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_custom_java);
+    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+        View view = inflater.inflate(R.layout.fragment_sample, container, false);
 
-        TabView tabView = (TabView) findViewById(R.id.tab_view);
+        TabView tabView = (TabView) view.findViewById(R.id.tab_view);
 
         List<TabViewChild> tabViewChildList = new ArrayList<>();
         TabViewChild tabViewChild1 = new TabViewChild(R.drawable.tab01_sel, R.drawable.tab01_unsel, "首页", FragmentCommon.newInstance("首页"));
@@ -33,15 +41,8 @@ public class CustomJavaActivity extends AppCompatActivity {
         tabViewChildList.add(tabViewChild4);
         tabViewChildList.add(tabViewChild5);
 
-        tabView.setTabViewPosition(1);
-        // tabView.setTabViewGravity(Gravity.TOP); 此处是个bug，需要在xml中写
-        tabView.setTabViewHeight(50);
-        tabView.setTabViewImgHeight(25);
-        tabView.setTabViewImgWidth(25);
-        tabView.setTabViewImgToTextGap(2);
-        tabView.setTabViewTextSize(8);
-        tabView.setBackGroundColor(Color.GREEN);
+        tabView.setTabViewChild(tabViewChildList, getChildFragmentManager());
 
-        tabView.setTabViewChild(tabViewChildList, getSupportFragmentManager());
+        return view;
     }
 }
