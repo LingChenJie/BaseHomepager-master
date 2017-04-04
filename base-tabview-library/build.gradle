@@ -1,6 +1,7 @@
 apply plugin: 'com.android.library'
 apply plugin: 'com.github.dcendents.android-maven'
 group='com.github.LingChenJie'
+// 不显示
 
 android {
     compileSdkVersion 25
