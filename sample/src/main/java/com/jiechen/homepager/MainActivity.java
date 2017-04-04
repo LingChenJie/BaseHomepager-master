@@ -18,7 +18,8 @@ public class MainActivity extends AppCompatActivity {
 
     private RecyclerView mRecyclerView;
     private List<String> mData = new ArrayList<>(Arrays.asList("QuickStartActivity",
-            "CustomInXmlActivity", "CustomInJavaActivity", "UseInFragment"));
+            "CustomInXmlActivity", "CustomInJavaActivity", "UseInFragment",
+            "RadioGroupActivity", "TabHostActivity"));
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -67,6 +68,14 @@ public class MainActivity extends AppCompatActivity {
 
                         case 3:
                             intent = new Intent(MainActivity.this, UseFragmentActivity.class);
+                            break;
+
+                        case 4:
+                            intent = new Intent(MainActivity.this, RadioGroupActivity.class);
+                            break;
+
+                        case 5:
+                            intent = new Intent(MainActivity.this, TabHostActivity.class);
                             break;
                     }
 

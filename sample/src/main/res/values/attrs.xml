@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ImgSizeRadioButton">
+        <attr name="radio_button_img_width" format="dimension" />
+        <attr name="radio_button_img_height" format="dimension" />
+        <attr name="radio_button_drawable_top" format="reference" />
+        <attr name="radio_button_drawable_left" format="reference" />
+        <attr name="radio_button_drawable_right" format="reference" />
+        <attr name="radio_button_drawable_bottom" format="reference" />
+    </declare-styleable>
+</resources>

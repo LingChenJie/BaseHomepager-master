@@ -18,7 +18,9 @@
         <activity android:name=".QuickStartActivity" />
         <activity android:name=".CustomXmlActivity" />
         <activity android:name=".CustomJavaActivity" />
-        <activity android:name=".UseFragmentActivity"></activity>
+        <activity android:name=".UseFragmentActivity" />
+        <activity android:name=".RadioGroupActivity" />
+        <activity android:name=".TabHostActivity"></activity>
     </application>
 
 </manifest>

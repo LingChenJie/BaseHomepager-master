@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.jiechen.homepager.widget.NoScrollViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <RadioGroup
+        android:id="@+id/radio_group_tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f0f0f0"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.jiechen.homepager.widget.ImgSizeRadioButton
+            android:id="@+id/tab_01"
+            style="@style/radio_button_style"
+            android:checked="true"
+            android:text="首页"
+            app:radio_button_drawable_top="@drawable/tab_01_selector"
+            app:radio_button_img_height="25dp"
+            app:radio_button_img_width="25dp" />
+
+        <com.jiechen.homepager.widget.ImgSizeRadioButton
+            android:id="@+id/tab_02"
+            style="@style/radio_button_style"
+            android:text="分类"
+            app:radio_button_drawable_top="@drawable/tab_02_selector" />
+
+        <com.jiechen.homepager.widget.ImgSizeRadioButton
+            android:id="@+id/tab_03"
+            style="@style/radio_button_style"
+            android:text="咨询"
+            app:radio_button_drawable_top="@drawable/tab_03_selector" />
+
+        <com.jiechen.homepager.widget.ImgSizeRadioButton
+            android:id="@+id/tab_04"
+            style="@style/radio_button_style"
+            android:text="购物车"
+            app:radio_button_drawable_top="@drawable/tab_04_selector" />
+
+        <com.jiechen.homepager.widget.ImgSizeRadioButton
+            android:id="@+id/tab_05"
+            style="@style/radio_button_style"
+            android:text="我的"
+            app:radio_button_drawable_top="@drawable/tab_05_selector" />
+
+    </RadioGroup>
+
+
+</LinearLayout>
