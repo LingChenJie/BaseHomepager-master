@@ -30,11 +30,11 @@ Sync项目以后，引入这个库就成功了~~~
     
 ### 3. 在xml中,加入以下代码:
 
-	  <com.heima.tabview.library.TabView
+	  <com.jiechen.tabview.TabView
 	        android:id="@+id/tabView"
 	        android:layout_width="match_parent"
 	        android:layout_height="match_parent">
-	  </com.heima.tabview.library.TabView>
+	  </com.jiechen.tabview.TabView>
 
 
 ### 4. 在项目当中添加如下代码:
